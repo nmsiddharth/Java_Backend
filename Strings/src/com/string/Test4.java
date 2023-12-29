@@ -6,7 +6,7 @@ public class Test4 {
 		String [] newStr = str.split(" ");
 		for(String ele:newStr) {
 			char ch[] = ele.toCharArray();
-			for(int i=ch.length-1;i>=0;i--) {
+			for(int i=ch.length-1;i>=0;i--) {  
 				System.out.print(ch[i]);
 			}
 			System.out.print(" ");
