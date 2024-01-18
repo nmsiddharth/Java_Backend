@@ -12,6 +12,7 @@ public class Linked_List {
 		linkedList.add(10);
 		linkedList.add(5);
 		linkedList.add(30);
+		linkedList.add(10);
 		System.out.println(linkedList);
 		
 		//Traversal Of Linked List
