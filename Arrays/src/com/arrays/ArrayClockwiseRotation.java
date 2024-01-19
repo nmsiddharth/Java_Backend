@@ -21,10 +21,12 @@ public class ArrayClockwiseRotation {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int [] arr = {1,2,3,4,5};
-		int []array=check(arr);
-		for(int data:array) {
-			System.out.print(data+" ");
-		}
+//		int []array=check(arr);
+//		for(int data:array) {
+//			System.out.print(data+" ");
+//		}
+		
+		System.out.println(Arrays.toString(check(arr)));
 	
 
 	}

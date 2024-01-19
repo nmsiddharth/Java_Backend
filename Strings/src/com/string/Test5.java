@@ -6,6 +6,8 @@ public class Test5 {
 		for(int i=0;i<str.length();i++) {
 			int currrentIndex = str.indexOf(str.charAt(i));
 			int LastIndex = str.lastIndexOf(str.charAt(i));
+//			System.out.println(currrentIndex);
+//			System.out.println(LastIndex);
 			if(currrentIndex==LastIndex) {
 				System.out.println(str.charAt(i));
 				break;   // If we remove break , then it prints all non-repeating characters.  
