@@ -14,21 +14,21 @@ public class BatchProcessing {
 		
 		PreparedStatement ps = con.prepareStatement(sql);
 		
-		ps.setString(1, "abcd1234");
-		ps.setInt(2, 1234);
-		ps.setString(3, "Siddu");
+		ps.setString(1, "jjfj534");
+		ps.setInt(2, 5556);
+		ps.setString(3, "Dhoni");
 		
 		ps.addBatch();
 		
-		ps.setString(1, "wxyz1234");
-		ps.setInt(2, 4567);
-		ps.setString(3, "Virat");
+		ps.setString(1, "iojgjg45466");
+		ps.setInt(2, 7666);
+		ps.setString(3, "ABD");
 		
 		ps.addBatch();
 		
-		ps.setString(1, "sdgh7890");
-		ps.setInt(2, 7890);
-		ps.setString(3, "Somu");
+		ps.setString(1, "lggjf705");
+		ps.setInt(2, 8594);
+		ps.setString(3, "Jimmy");
 		
 		ps.addBatch();
 		
