@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><beans xmlns="http://www.springframework.org/schema/beans"    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    
+    <!--<bean id="sim" class="com.java.SpringFramework.Vodafone"/>
+    
+    
+          
+      <bean id="student" class=" com.constructorInjection.primitive.Student">
+		  <constructor-arg name="id" value="101"></constructor-arg>
+		  <constructor-arg name="name" value="Sid"></constructor-arg>
+	  </bean>    
+	  
+	  
+	
+      <bean id="addr" class=" com.constructorInjection.dependent.Address">
+		  <constructor-arg  value="Bengaluru"></constructor-arg>
+		  <constructor-arg  value="Karnataka"></constructor-arg>
+	  </bean>  
+	  
+	  <bean id="emp" class=" com.constructorInjection.dependent.Employee">
+		  <constructor-arg  value="101"></constructor-arg>
+		  <constructor-arg  value="Siddharth"></constructor-arg>
+		   <constructor-arg  ref= "addr"></constructor-arg>
+	  </bean> 
+	  
+	  
+	  
+	     <bean id="category" class=" com.constructorInjection.collection_1.Category">
+		  <constructor-arg  value="101"></constructor-arg>
+		  <constructor-arg  value="Mobiles"></constructor-arg>
+		   <constructor-arg>
+			   <list>
+				   <value>I-Phone</value>
+				    <value>Samsung-M30</value>
+			   </list>
+		   </constructor-arg>
+	  </bean> 
+	  
+	    
+	     <bean id="p1" class=" com.constructorInjection.collection_2.Product">
+		  <constructor-arg  value="101"></constructor-arg>
+		  <constructor-arg  value="I-Phone"></constructor-arg>
+	  </bean> 
+	  
+	   <bean id="p2" class=" com.constructorInjection.collection_2.Product">
+		  <constructor-arg  value="102"></constructor-arg>
+		  <constructor-arg  value="Samsung"></constructor-arg>
+	  </bean> 
+	  
+	  
+	  <bean id="c1" class=" com.constructorInjection.collection_2.Category1">
+		  <constructor-arg  value="1001"></constructor-arg>
+		  <constructor-arg  value="Mobile"></constructor-arg>
+		   <constructor-arg>
+			   <list>
+				   <ref bean="p1"/>
+				   <ref bean="p2"/>
+			   </list>
+		   </constructor-arg>
+	  </bean> 
+	  
+	  <bean id="s1" class="com.setterInjection.primitives.Student">
+		  <property name="studentId" value="101"/>
+		  <property name="studentName" value="Siddharth"/>
+	  </bean>
+	  
+	  
+	  <bean id="addr" class="com.setterInjection.dependent.Address">
+		  <property name="city" value="Bengaluru"/>
+		  <property name="state" value="Karnataka"/>
+	  </bean>
+	  
+	   <bean id="emp1" class=" com.setterInjection.dependent.Employee">
+		   <property name="id" value="101"/>
+		   <property name="name" value="Sid"/>
+		   <property name="address" ref="addr"/>
+	   </bean>
+	   
+	   <bean id="category" class="com.setterInjection.collection_1.Category">
+		   <property name="id" value="101"/>
+		    <property name="name" value="Mobile"/>
+		    <property name="products"><list>
+				<value>I-Phone</value>
+				<value>Samsung</value>
+			</list></property>
+	   </bean>
+	   
+	   <bean id="p1" class="com.setterInjection.collection_2.Product">
+		   <property name="productId" value="101"/>
+		   <property name="productName" value="I-phone"/>
+	   </bean>
+	   
+	     <bean id="p2" class="com.setterInjection.collection_2.Product">
+		   <property name="productId" value="102"/>
+		   <property name="productName" value="Samsung"/>
+	   </bean>
+	   
+	   <bean id="c1" class="com.setterInjection.collection_2.Category1">
+		   <property name="categoryId" value="10001"/>
+		   <property name="categoryName" value="Mobile"/>
+		   <property name="products">
+			   <list>
+				   <ref bean="p1"/>
+				   <ref bean="p2"/>
+			   </list>
+		   </property>
+	   </bean> 
+	   
+	   
+	   <bean id="address" class="com.autowiring.byName.Address">
+		   <property name="city" value="Bengaluru"/>
+	   </bean>
+	   
+	    <bean id="emp" class="com.autowiring.byName.Employee" autowire="byName">
+		   <property name="empId" value="101"/>
+		   <property name="empName" value="Siddu"/>
+	   </bean>
+	   
+	   <bean id="addr" class="com.autowiring.byType.Address">
+		   <property name="city" value="Bengaluru"/>
+	   </bean>
+	   
+	    <bean id="emp" class="com.autowiring.byType.Employee" autowire="byType">
+		   <property name="empId" value="101"/>
+		   <property name="empName" value="Siddu"/>
+	   </bean>
+	   
+	   <bean id="mobile" class="com.beanScope.Mobile" scope="prototype">  
+	   </bean>-->
+	   
+	   <bean id="product" class="com.beanLifecycle.Product" init-method="init" destroy-method="destroy">
+		   <property name="name" value="iphone"/>
+	   </bean>
+    </beans>
