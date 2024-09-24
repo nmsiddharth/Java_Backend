@@ -74,7 +74,7 @@ public class SwitchStatements {
 			System.out.println("Do you want to continue:y/n");
 			ch = sc.next().charAt(0);
 		}while(ch=='y');
-			System.out.println("Out of Switch");
+			System.out.println("Thank You");
 	}
 
 }

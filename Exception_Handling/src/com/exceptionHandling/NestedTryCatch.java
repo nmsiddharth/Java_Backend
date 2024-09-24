@@ -14,7 +14,7 @@ public class NestedTryCatch {
 			}
 			
 		}catch(Exception e) {
-			System.out.println("Exeption handked in 2nd catch block");
+			System.out.println("Exeption handled in 2nd catch block");
 		}
 	}
 	public static void main(String[] args) {
